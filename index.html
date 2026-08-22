@@ -302,6 +302,26 @@
     font-size: 12px;
     font-family: 'JetBrains Mono', monospace;
   }
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .brand-logo {
+    height: 32px;
+    width: auto;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+  .brand-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    color: var(--cyan);
+    text-transform: uppercase;
+  }
   @media (max-width: 980px) {
     .sidebar { width: 60px; }
   }
@@ -314,6 +334,10 @@
 <body>
 <div class="grid-bg"></div>
 <div class="app">
+  <div class="brand-bar">
+    <img class="brand-logo" src="logo.jpg" alt="Logo EPQ" />
+    <div class="brand-title">Área do Aluno</div>
+  </div>
   <div class="layout">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-brand">EPQ</div>

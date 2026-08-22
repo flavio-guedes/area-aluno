@@ -103,8 +103,8 @@
     border: 1px solid var(--border);
     border-radius: 10px;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     padding: 16px;
     overflow: hidden;
   }
@@ -117,12 +117,13 @@
       linear-gradient(135deg, transparent, rgba(34,211,238,0.08));
     pointer-events: none;
   }
-  .hero-placeholder {
+  .hero-logo {
     position: relative;
     z-index: 1;
-    color: var(--text-muted);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
+    max-height: 140px;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--border);
   }
   .grid-bg {
     position: fixed;
@@ -155,7 +156,7 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-placeholder">Espaço reservado para banner com aluno estudando</div>
+      <img class="hero-logo" src="logo.jpg" alt="Logo EPQ" />
     </div>
   </div>
 </div>
